@@ -1,3 +1,13 @@
 body {
   background-color: Gainsboro;
 }
+
+p {
+  font-family:Comic Sans MS,cursive;
+  font-size:18px;
+}
+
+.title {
+  text-align:center;
+  font-size:26px;
+}

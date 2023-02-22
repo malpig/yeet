@@ -12,21 +12,21 @@ These games are in the website (or will be!) 💀
    <img src="img/fortnite.png" style="height:150px; width:100px" />
    <img alt="" src="img/1.jpg" style="height: 150px; width:100px" />
    <img alt="" src="img/backrooms.png" style="height: 150px; width:100px" />
-   <img alt="" src="img/baldi.png" style="height: 150px; width:100px" />
    <img alt="" src="img/bitlife.png" style="height: 150px; width:100px" />
    <img alt="" src="img/ohiogta.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/dino.png" style="height: 150px; width:100px" />
 </p>
 <p>
-   <img alt="" src="img/dino.png" style="height: 150px; width:100px" />
    <img alt="" src="img/fnf.png" style="height: 150px; width:100px" />
    <img alt="" src="img/fruitninja.jpg" style="height: 150px; width:100px" />
    <img alt="" src="img/googlefeud.png" style="height: 150px; width:100px" />
    <img alt="" src="img/run3.png" style="height: 150px; width:100px" />
    <img alt="" src="img/slope.png" style="height: 150px; width:100px" />
    <img alt="" src="img/sm64.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/fnaf.png" style="height: 150px; width:100px" />
 </p>
 <p>
-   <img alt="" src="img/fnaf.png" style="height: 150px; width:100px" />
+   
    <img alt="" src="img/fnaf 2.png" style="height: 150px; width:100px" />
 </p>
 

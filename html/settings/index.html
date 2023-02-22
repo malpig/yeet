@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/settings.css" />
+    <title id="pageTitle">Settings | lioxryt</title>
+    <link rel="icon" href="/img/newlogo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <a href="/">
+      <img class="home" src="/img/home.png">
+  </a>
+    <h2 style="font-size: 40px">Settings</h2>
+    <div class="section-title">Tab Cloak</div>
+    <div class="buttons">
+      <input
+        id="title"
+        class="input"
+        placeholder="Title"
+        onkeyup="setTitle(this.value)"
+      />
+      <br />
+      <br />
+      <input
+        id="icon"
+        class="input"
+        placeholder="Favicon"
+        onkeyup="setFavicon(this.value.trim())"
+      />
+      <br />
+      <br />
+      <button class="button" onclick="resetTab()">Reset</button>
+    </div>
+    <br />
+    <div class="section-title">Presets</div>
+    <div id="buttons-container"></div>
+    </div>
+    <hr />
+    <h1>About:Blank Embeder</h1>
+    <div class="console-container">
+      <div class="console">
+        <div class="consolebody">
+          <p>Enter a URL you want to be opened in a about:blank page below:</p>
+          <p class="console-input">
+            <input
+              id="url-target"
+              value=""
+              autocomplete="on"
+              type="text"
+              autofocus=""
+            />
+          </p>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <button id="create" class="console-button">Create page</button>
+      </div>
+    </div>
+    <script src="js/cloak.js"></script>
+    <script src="js/aboutblank.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

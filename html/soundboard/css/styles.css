@@ -1,0 +1,180 @@
+body {
+  font-size: 12px;
+  background: #0F0F0F !important;
+  border-style: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #E6E6E6;
+}
+
+.sound {
+  border-style: outset;
+  width: 95px;
+  height: 170px;
+  margin: 4px;
+}
+
+#section{
+  font-size: large;
+  color: #E6E6E6;
+}
+
+.download {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+.name {
+  text-align: center;
+  font-size: 15px;
+  color: #000000;
+}
+
+#instants_container {
+  margin: 30px auto 0;
+  text-align: center;
+  border-style: none;
+}
+
+.instant {
+  position: relative;
+  vertical-align: top;
+  width: 94px;
+  border-style: none;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  word-wrap: break-word;
+}
+
+.small-button {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 3px;
+  margin-top: 0px;
+  border-style: none;
+  position: absolute;
+  background: url(../img/button.png) no-repeat;
+  cursor: pointer;
+}
+.small-button:active {
+  background: url(../img/button-pressed.png) no-repeat;
+  cursor: progress;
+}
+.small-button-background {
+  width: 86px;
+  height: 84px;
+  margin-top: 3px;
+  margin-left: 6px;
+  position: absolute;
+}
+.small-button-shadow {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 5px;
+  background: url(../img/button-shadow.png) no-repeat;
+}
+.circle {
+  border-radius: 50%;
+}
+
+#soundsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1E1E1E;
+}
+
+#soundsContainer > div {
+  background-color: #E6E6E6;
+  color: #1E1E1E;
+  padding: 2px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#soundsContainer > div:hover {
+  background-color: #2ECC71;
+  color: #FFF;
+}
+
+#favoritesContainer{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1E1E1E;
+}
+
+#favoritesContainer > div {
+  background-color: #E6E6E6;
+  color: #1E1E1E;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#favoritesContainer > div:hover {
+  background-color: #2ECC71;
+  color: #FFF;
+}
+
+.woah {
+  cursor: pointer;
+  color: #E6E6E6;
+}
+
+#speedSlider {
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+}
+
+#speedValue {
+  position: fixed;
+  bottom: 53px;
+  right: 135px;
+  color: #E6E6E6;
+}
+
+#playAllButton {
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+  background-color: #E6E6E6;
+  color: #1E1E1E;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#stopAllButton {
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  background-color: #E6E6E6;
+  color: #1E1E1E;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}

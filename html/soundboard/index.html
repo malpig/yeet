@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="/img/newlogo.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Soundboard | lioxryt</title>
+  </head>
+  <body>
+    <script>
+      var audioObjects = [];
+      var currentSpeed = 1;
+    </script>
+    <button id="stopAllButton" onclick="stopAll()">Stop all</button>
+    <input
+      type="range"
+      min="0.5"
+      max="2"
+      value="1"
+      step="0.01"
+      id="speedSlider"
+    />
+    <span id="speedValue"></span>
+    <script>
+      function stopAll() {
+        audioObjects.forEach(function (audioObject) {
+          audioObject.pause();
+        });
+      }
+    </script>
+    <script>
+      document
+        .getElementById("speedSlider")
+        .addEventListener("input", function () {
+          currentSpeed = this.value;
+          updateSpeed();
+        });
+      function updateSpeed() {
+        audioObjects.forEach(function (audioObject) {
+          audioObject.playbackRate = currentSpeed;
+        });
+        document.getElementById("speedValue").innerHTML = currentSpeed;
+      }
+    </script>
+    <h1>Soundboard</h1>
+    <h2>
+      Just click a tile<br />
+      <a href="https://forms.gle/Afv8gmvbDm4cEUqr5"
+        >Click here to recommend a sound</a
+      >
+    </h2>
+    <h3 id="section">Some Goofs</h3>
+    <div id="soundsContainer"></div>
+    <script>
+      // Fetch JSON data from external file
+      fetch("sounds.json")
+        .then((response) => response.json())
+        .then((soundsData) => {
+          // Loop through each sound in the JSON data
+          soundsData.forEach((sound) => {
+            // Create elements for each sound
+            const soundContainer = document.createElement("div");
+            const name = document.createElement("p");
+            const downloadButton = document.createElement("button");
+
+            // Add classes to elements
+            soundContainer.classList.add("sound");
+            name.classList.add("name");
+            downloadButton.classList.add("download");
+
+            // Add onclick function to the sound container
+            soundContainer.onclick = function () {
+              var currentSpeed = document.getElementById("speedSlider").value;
+              const audioElement = new Audio(sound.file);
+              audioObjects.push(audioElement);
+              audioElement.playbackRate = currentSpeed;
+              audioElement.play();
+            };
+
+            // Add onclick function to the download button
+            downloadButton.onclick = function () {
+              window.location.href = sound.file;
+            };
+
+            // Set text content for elements
+            name.textContent = sound.name;
+            downloadButton.textContent = "Download";
+
+            // Append elements to the sound container
+            soundContainer.appendChild(name);
+            soundContainer.appendChild(downloadButton);
+
+            // Append the sound container to the sounds container
+            document
+              .getElementById("soundsContainer")
+              .appendChild(soundContainer);
+          });
+        });
+    </script>
+    <script src="/html/settings/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+[
+    {
+      "name": "Fart",
+      "file": "sounds/fart.mp3",
+      "color": "#339900"
+    },
+    {
+      "name": "Fart with reverb",
+      "file": "sounds/fart-with-reverb.mp3",
+      "color": "#694729"
+    },
+    {
+      "name": "Sloppy Fart",
+      "file": "sounds/sloppy-fart.mp3",
+      "color": "#d000ff"
+    },
+    {
+      "name": "Taco Bell!",
+      "file": "sounds/taco-bell.mp3",
+      "color": "#702082"  
+    },
+    {
+      "name": "Vine Boom",
+      "file": "sounds/vine.mp3",
+      "color": "#9ff1ff"  
+    },
+    {
+      "name": "Cartoon Sneak",
+      "file": "sounds/csneak.mp3",
+      "color": "#00842a"  
+    },
+    {
+      "name": "Cartoon Race Start",
+      "file": "sounds/crace.mp3",
+      "color": "#afa1ff"  
+    },
+    {
+      "name": "Cartoon Crash",
+      "file": "sounds/ccrash.mp3",
+      "color": "#00594a"  
+    },
+    {
+      "name": "Cartoon Slip",
+      "file": "sounds/cslip.mp3",
+      "color": "#7700ff"  
+    },
+    {
+      "name": "Cartoon Run",
+      "file": "sounds/crun.mp3",
+      "color": "#e0c4ff"  
+    },
+    {
+      "name": "Emoji Laugh",
+      "file": "sounds/funny-laugh.mp3",
+      "color": "#55ff9f"  
+    },
+    {
+      "name": "Gentlemen!",
+      "file": "sounds/gentleman.mp3",
+      "color": "#d4ff00"  
+    },
+    {
+      "name": "Please give me Coc",
+      "file": "sounds/plsgivmecoc.mp3",
+      "color": "#336a00"  
+    },
+    {
+      "name": "You Stupid Ni",
+      "file": "sounds/you-stupid-ni.mp3",
+      "color": "#ffffff"  
+    },
+    {
+      "name": "Lil Buddy was sick, Took all his bands",
+      "file": "sounds/lbwstahb.mp3",
+      "color": "#383838"  
+    },
+    {
+      "name": "Spongebob Disgusting",
+      "file": "sounds/wawa.mp3",
+      "color": "#f9ff46"  
+    },
+    {
+      "name": "Why are you Gae",
+      "file": "sounds/yrugae.mp3",
+      "color": "#005661"  
+    },
+    {
+      "name": "You are Gae",
+      "file": "sounds/urgae.mp3",
+      "color": "#ff0000"  
+    },
+    {
+      "name": "Xue hua piao piao",
+      "file": "sounds/xuehua.mp3",
+      "color": "#00a61e"  
+    },
+    {
+      "name": "Clash of Clans Intro",
+      "file": "sounds/coc.mp3",
+      "color": "#00114e"  
+    },
+    {
+      "name": "Clash Royale Intro",
+      "file": "sounds/cr.mp3",
+      "color": "#d0ff01"  
+    },
+    {
+      "name": "Old Spice Whistle",
+      "file": "sounds/spice.mp3",
+      "color": "#ff5d5d"  
+    },
+    {
+      "name": "Kid-Friendly Content",
+      "file": "sounds/ph.mp3",
+      "color": "#ff6a00"  
+    },
+    {
+      "name": "Bing Chilling",
+      "file": "sounds/bingchilling.mp3",
+      "color": "#ffe9da"  
+    },
+    {
+      "name": "The Grow-up Plan",
+      "file": "sounds/gup.mp3",
+      "color": "#6d6d6d"  
+    },
+    {
+      "name": "Monkeys Singing Chinese",
+      "file": "sounds/cms.mp3",
+      "color": "#61ffc0"  
+    },
+    {
+      "name": "Minecraft Death",
+      "file": "sounds/mcded.mp3",
+      "color": "#41ba00"  
+    },
+    {
+      "name": "Nea Ni Nea Nea Ni Ni",
+      "file": "sounds/neani.mp3",
+      "color": "#ff46bb"  
+    },
+    {
+      "name": "WWE Undertaker",
+      "file": "sounds/wweut.mp3",
+      "color": "#007971"  
+    },
+    {
+      "name": "Sin City",
+      "file": "sounds/sincity.mp3",
+      "color": "#ffe74b"  
+    },
+    {
+      "name": "Open Na Noor",
+      "file": "sounds/onn.mp3",
+      "color": "#a400c5"  
+    }
+  ]

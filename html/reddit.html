@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXGG6SJL6H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XXGG6SJL6H");
+    </script>
+    <link rel="icon" type="image/x-icon" href="/img/newlogo.png" />
+    <title>Random Post Generator</title>
+    <style>
+      body {
+        background-color: #000000;
+      }
+      button {
+        background-color: #171717;
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 100px;
+      }
+      form {
+        display: flex;
+      }
+      input {
+        border: none;
+        background-color: #171717;
+        color: #ffffff;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      id="title"
+      style="
+        font-size: 36;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        color: #ffffff;
+      "
+    >
+      Random Reddit Post
+    </h1>
+    <h1
+      id="caption"
+      style="
+        font-size: 20;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        color: #ffffff;
+      "
+    ></h1>
+    <img
+      id="PostImg"
+      src=""
+      alt="Random Post"
+      onerror="setPostImage()"
+      style="height: 67vh; width: auto"
+    />
+    <h1
+      id="link"
+      style="
+        font-size: 11;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        color: #ffffff;
+      "
+    ></h1>
+    <h1
+      id="info"
+      style="
+        font-size: 11;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        color: #ffffff;
+      "
+    ></h1>
+    <h1
+      style="
+        font-size: 20;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        color: #ffffff;
+      "
+    >
+      Enter Subreddits
+    </h1>
+    <form id="subredditForm">
+      <input type="text" id="subredditInput" placeholder="(example,example)" />
+      <button type="submit">Update Subreddits</button>
+    </form>
+    <button id="refreshButton">Load Another Post</button>
+    <script>
+      // Array of subreddit names
+      let subreddits = [];
+
+      // Function to get a random subreddit from the array
+      function getRandomSubreddit() {
+        return subreddits[Math.floor(Math.random() * subreddits.length)];
+      }
+
+      // Function to get a random Post from the subreddit
+      async function getRandomPost(subreddit) {
+        const response = await fetch(
+          `https://www.reddit.com/r/${subreddit}/random.json`
+        );
+        const data = await response.json();
+        const post = data[0].data.children[0].data;
+        return {
+          url: post.url,
+          permalink: post.permalink,
+          caption: post.title,
+          subreddit: post.subreddit,
+          ups: post.ups,
+        };
+      }
+
+      // Function to set the src attribute and caption of the Post image
+      async function setPostImage() {
+        const subreddit = getRandomSubreddit();
+        const {
+          url,
+          permalink,
+          caption,
+          subreddit: postSubreddit,
+          ups,
+        } = await getRandomPost(subreddit);
+        const link = document.createElement("a");
+        link.href = `https://www.reddit.com${permalink}`;
+        link.textContent = `Post Link`;
+        document.getElementById("PostImg").src = url;
+        document.getElementById("link").textContent = `Link: `;
+        document.getElementById("link").appendChild(link);
+        document.getElementById(
+          "info"
+        ).textContent = `Sub: ${postSubreddit} | Upvotes: ${ups}`;
+        document.getElementById("caption").textContent = `${caption}`;
+      }
+
+      // Set the initial Post image
+      setPostImage();
+
+      // Add an event listener to the refresh button to set a new Post image when clicked
+      document
+        .getElementById("refreshButton")
+        .addEventListener("click", setPostImage);
+
+      // Add an event listener to the subreddit form to update the subreddits array and set a new Post image when submitted
+      document
+        .getElementById("subredditForm")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+          const input = document.getElementById("subredditInput");
+          subreddits = input.value.split(",").map((s) => s.trim());
+          input.value = "";
+          setPostImage();
+        });
+    </script>
+    <script src="/html/settings/js/index.js"></script>
+  </body>
+</html>

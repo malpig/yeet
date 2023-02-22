@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/img/newlogo.png" />
+    <title>Playlist</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Create a div to hold the playlist button -->
+    <div id="playlistContainer">
+      <!-- Create the playlist button -->
+      <button id="playlistButton">Playlist</button>
+    </div>
+
+    <!-- Create the song title element -->
+    <div id="songTitle"></div>
+
+    <!-- Create the song duration element -->
+    <div id="songDuration">0:00</div>
+
+    <!-- Create the controls -->
+    <button id="prevButton">Prev</button>
+    <button id="playButton">Play</button>
+    <button id="nextButton">Next</button>
+
+    <!-- Create the popup -->
+    <div id="popup">
+      <!-- Create a list to hold the song titles -->
+      <ul id="songList"></ul>
+    </div>
+    <script src="./js/howler.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="/html/settings/js/index.js"></script>
+  </body>
+</html>

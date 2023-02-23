@@ -2,7 +2,13 @@
 
 A custom g*me compilation site. (will contain a link to Biology Homework)
 
-### Status: Working!
+## Status: Working!
+
+### Note, various games just don't want to work because of a Unity WebGL error.
+
+```An error occured running the Unity content on this page. See your browser JavaScript console for more info. The error was: Uncaught SyntaxError: Identifier 'IsijVersion' has already been declared.```
+
+### Someone help i'm a JavaScript noobie.
 
 #
 
@@ -29,7 +35,6 @@ These g*mes are in the website (or will be!) 💀
    
    <img alt="" src="img/fnaf 2.png" style="height: 150px; width:100px" />
    <img alt="" src="img/thereisnogame.png" style="height: 150px; width:100px" />
-   <img alt="" src="img/baldi.png" style="height: 150px; width:100px" />
 </p>
 
 G*mes from:

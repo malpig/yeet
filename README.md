@@ -6,7 +6,7 @@ A custom g*me compilation site. (will contain a link to Biology Homework)
 
 #
 
-These games are in the website (or will be!) 💀
+These g*mes are in the website (or will be!) 💀
 
 <p><img alt="" src="img/amogus.jpg" style="height:150px; width:100px" />
    <img src="img/fortnite.png" style="height:150px; width:100px" />

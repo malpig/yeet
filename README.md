@@ -4,15 +4,9 @@ A custom g*me compilation site. (will contain a link to Biology Homework)
 
 ## Status: Working!
 
-### Note, various games just don't want to work because of a Unity WebGL error.
-
-```An error occured running the Unity content on this page. See your browser JavaScript console for more info. The error was: Uncaught SyntaxError: Identifier 'IsijVersion' has already been declared.```
-
-### Someone help i'm a JavaScript noobie.
-
 #
 
-These g*mes are in the website (or will be!) 💀
+These g*mes are in the website (or will be soon!) 💀
 
 <p><img alt="" src="img/amogus.jpg" style="height:150px; width:100px" />
    <img src="img/fortnite.png" style="height:150px; width:100px" />

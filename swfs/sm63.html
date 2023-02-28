@@ -11,20 +11,11 @@
     <body>
         <script src="../flash/ruffle.js"></script>
         <div class="center">
-            <script>
-                window.RufflePlayer = window.RufflePlayer || {};
-                window.addEventListener("load", (event) => {
-                    const ruffle = window.RufflePlayer.newest();
-                    const player = ruffle.createPlayer();
-                    const container = document.getElementById("container"); 
-                    container.appendChild(player);
-                    player.load({
-                        url: "sm63.swf", 
-                        backgroundColor: "#000", 
-                     });
-                    player.style.width = "1280px"; 
-                    player.style.height = "720px";
-                });
-            </script>
+            <object width="1280" height="720">
+                <param name="movie" value="sm63.swf">
+                <embed src="sm63.swf" width="550" height="400">
+                </embed>
+            </object>
+        </div>
     </body>
 </html>

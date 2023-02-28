@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
     <body>
-    <table width="100%" class="ex" cellspacing="0" border="1"> 
-    <tr> 
-        <td>
-            <object width="550" height="400">
-                <param name="movie" value="somefilename.swf">
-                <embed src="sm63.swf" width="550" height="400">
-                </embed>
-            </object>
-        </td> 
-    </tr>
-    </table>
-    <script src="../flash/ruffle.js"></script>
+        <div id='ruffle'></div>
+        <script>
+            var swfobject = {};
+
+            swfobject.embedSWF = function(url, cont, width, height){
+                var ruffle = window.RufflePlayer.newest(),
+                    player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+                        width: width,
+                        height: height,
+                        style: 'width: ' + width + 'px; height: ' + height + 'px',
+                    });
+
+                player.load({ url: url });
+            }
+
+            swfobject.embedSWF('sm63.swf', 'ruffle', 500, 500);
+        </script>
+        <script src="../flash/ruffle.js"></script>
     </body>
 </html>

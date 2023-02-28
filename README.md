@@ -31,7 +31,14 @@ These g*mes are in the website (or will be soon!) 💀
    <img alt="" src="img/thereisnogame.png" style="height: 150px; width:100px" />
    <img alt="" src="img/baldi.png" style="height: 150px; width:100px" />
    <img alt="" src="img/tetris.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/avsa.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/mariocombat.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/impossiblequiz.png" style="height: 150px; width:100px" />
 </p>
+<p>
+   <img alt="" src="img/portal.png" style="height: 150px; width:100px" />
+</p>
+
 
 G*mes from:
 [lioxryt](https://github.com/lioxryt/other)

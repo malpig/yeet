@@ -1,5 +1,5 @@
 var mainarea, ffd, upload, legacy, rplayer, useLegacy;
-var cdn = "/flash/swf/";
+var cdn = "../swfs/";
 
 // query string into object
 var search = decodeURIComponent(window.location.search).substring(1).split("&");

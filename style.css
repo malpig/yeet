@@ -5,9 +5,9 @@ background-color: rgb(15, 15, 15);
 color: white;
 }
 img {
-    border: 2px blue solid;
+    border: 2px DarkSlateGrey solid;
     padding: 10px;
-    margin: 2px;
+    margin: 0px;
     transition: all 2s;
     display: inline-block;
 }

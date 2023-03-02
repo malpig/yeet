@@ -41,6 +41,8 @@ These g*mes are in the website (or will be soon!) 💀
    <img alt="" src="img/dragonballz.png" style="height: 150px; width:100px" />
    <img alt="" src="img/blokorz.png" style="height: 150px; width:100px" />
    <img alt="" src="img/supersmashflash.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/doom.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/doom2.png" style="height: 150px; width:100px" />
 </p>
 
 

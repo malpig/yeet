@@ -46,6 +46,9 @@ These g*mes are in the website (or will be soon!) 💀
 </p>
 <p>
    <img alt="" src="img/ucn.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/cookie.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/subwaysurfers.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/wolf3d.png" style="height: 150px; width:100px" />
 </p>
 
 G*mes from:

@@ -57,6 +57,7 @@ These g*mes are in the website (or will be soon!) 💀
 </p>
 <p>
    <img alt="" src="img/wolf3d.png" style="height: 150px; width:100px" />
+   <img alt="" src="img/dogeminer.png" style="height: 150px; width:100px" />
 </p>
 G*mes from:
 [lioxryt](https://github.com/lioxryt/other)

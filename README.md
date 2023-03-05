@@ -41,7 +41,8 @@ To make it easy to fork this repo to another platform such as Replit, I provided
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/DingusOrg/yeet)
 [![Deploy to Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/DingusOrg/yeet)
 
-## Status: Working!
+
+![live site reaction](https://user-images.githubusercontent.com/83835381/222937032-a06e872a-a8f4-4a93-9416-8ad29c7a57ec.png)
 
 
 These g*mes are in the website (or will be soon!) 💀

@@ -16,13 +16,20 @@ Now, how do you make your own custom version of this website?
 
 To deploy your very own version of Yeet on GitHub Pages, you will need a GitHub account.
 
-Click on the Fork button and type in a name for your forked repo. 
+- Go to https://github.com/DingusOrg/yeet/fork
+- Click "Create Fork" (You need a GitHub account.)
 
 ![step1](https://user-images.githubusercontent.com/83835381/222936485-82132812-a889-4b85-9a19-0866d98ba445.jpg)
 
-Wait for the files to be copied over and it will deploy to GitHub Pages automatically (hopefully)
+- Then go to the settings of the repository you made. (Button is at the top of the screen)
+- Select the "Pages" option.
+- Then under "Branch", click on "None" then select "Main"
+- Click the "Save" button
+- At the top of the page there should be an option to "Visit site." If you don't see the button, wait 5 minutes and refresh the page.
+- If you have any questions, or need more help setting up open an issue at https://github.com/DingusOrg/yeet/issues
+- If you enjoy this site, please give us a star on github. ⭐
 
-The format for your fork will be ```https://USERNAME.github.io/FORKNAME```
+The format for your fork site will be ```https://USERNAME.github.io/FORKNAME```
 
 No extra code modifications necessary! It's fork and deploy and that's it!
 
